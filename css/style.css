@@ -1,0 +1,47 @@
+body { 
+    margin: auto;
+    background: url("https://i.pinimg.com/originals/5a/54/52/5a54523a34ff94b9f189f1ffcdc89200.jpg");
+    background-size: cover;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+.form-wrap{
+width: 320px; 
+background: #3e3d3d; 
+padding: 100px 10px; 
+box-sizing: border-box; 
+position: fixed; 
+left: 50%; 
+top: 50%; 
+transform: translate(-50%, -50%);
+}
+h1, p{
+    text-align: center; 
+    color: rgb(0, 0, 0); 
+    font-weight: normal; 
+    margin-bottom: 20px;
+}
+form {
+    display: block;
+    background: rgb(242, 212, 243);
+    width: 100%;
+}
+.nationality{
+    padding: 6px 15px;
+}
+.checkbox {
+    padding: 6px 15px;
+}
+.textarea{
+    padding: 6px 15px;
+}
+input {
+    width: 50%;
+    border-radius: 20px;
+    outline: none
+  }
+  input:focus {
+    background-color: rgb(242, 212, 243);
+    border: 3px solid rgb(234, 152, 236);
+  }
