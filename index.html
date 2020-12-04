@@ -1,57 +1,89 @@
 <html>
     <head>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css\style.css">
-        <title> Survey Form </title>
+        <title>Survey Form</title>
     </head>
     
     <body>
         <div class="form-wrap">        
             <form id="survey-form" action="">
                 <header>
-                    <h1 id="title"> My First Survey Form </h1>
+                    <h1 id="title">My First Survey Form</h1>
                 </header>
-                <p id="description"> Thank you for taking the time to help me improve my coding skills </p>
-                <label id="name-label" > Name </label>
-                <input id="name" type="text" required placeholder="Enter your full name">
-                <label id="email-label"> Email </label>
-                <input id="email" type="email" required placeholder="Enter your email">
-                <label id="number-label"> Phone Number </label>
-                <input id="number" type="number" min="9" max="9" placeholder="Enter your phone number">
-
-                <label> Select your city </label>
-                <select id = "dropdown">
-                <option value = "1">Rio de janeiro</option>
-                <option value = "2">Budapest</option>
-                <option value = "3">Berlim</option>
-                <option value = "4">Barcelona</option>
-                </select>
+                <p id="description">Thank you for taking the time to help me improve my coding skills</p>
+                <div class="personal-info">
+                    <div class="personal-fields">
+                        <label id="name-label" > Name </label>
+                        <input id="name" type="text" required placeholder="Enter your full name">
+                    </div>
+                    <div class="personal-fields">
+                        <label id="email-label">Email</label>
+                        <input id="email" type="email" required placeholder="Enter your email">
+                    </div>
+                    <div class="personal-fields">
+                        <label id="number-label">Phone Number</label>
+                        <input id="number" type="number" min="9" max="9" placeholder="Enter your phone number">
+                    </div>
+                </div>
+                <div class="city-fields">
+                    <label>Select your city</label>
+                    <select id="dropdown">
+                        <option value="1">Rio de janeiro</option>
+                        <option value="2">Budapest</option>
+                        <option value="3">Berlin</option>
+                        <option value="4">Barcelona</option>
+                    </select>
+                </div>
                 <div class="nationality">
-                    <label id="radio-label">Brazilian</label>
-                    <input type="radio" id="brazilian" name="citizenship" value="brazilian">
-                    <label id="radio-label">Foreigner</label>
-                    <input type="radio" id="foreigner" name="citizenship" value="foreigner">
+                    <div class="nationality-tittle">
+                        <label>Select your Nationality</label>
+                    </div>
+                    <div class="nationality-options">
+                        <div class="nationality-fields">
+                            <label id="radio-label">Brazilian</label>
+                            <input type="radio" id="brazilian" name="citizenship" value="brazilian">
+                        </div>
+                        <div class="nationality-fields">
+                            <label id="radio-label">Foreigner</label>
+                            <input type="radio" id="foreigner" name="citizenship" value="foreigner">
+                        </div>
+                    </div>
                 </div>
-                <label>Why do you love travelling?</label>
+                <div class="travelling">
+                    <div class="travelling-tittle">
+                        <label>Why do you love travelling?</label>
+                    </div>
+                    <div class="travelling-checkbox">
+                        <input type="checkbox" name="scales" value="1">
+                        <label class="checkbox-label">make friends</label>
+                    </div>
+                    <div class="travelling-checkbox">
+                        <input type="checkbox" name="scales" value="2">
+                        <label class="checkbox-label">learn a new language</label>
+                    </div>
+                    <div class="travelling-checkbox">
+                        <input type="checkbox" name="scales" value="2">
+                        <label class="checkbox-label">visit new places</label>
+                    </div>
+                    <div class="travelling-checkbox">
+                        <input type="checkbox" name="scales" value="2">
+                        <label class="checkbox-label">expand your knowledge</label>
+                    </div>
+                </div>
 
-                <div class="checkbox">
-                    <input type="checkbox" name="scales" value="1">
-                    <label class="checkbox-label">make friends</label>
+                <section>
+                    <div class="fields">
+                        <label>Aditional coments</label>
+                    </div>
+                    <div class="fields">
+                        <textarea name="comment" maxlength="250">Some funny experiences?</textarea>
+                    </div>
+                </section>
+                <div class="button">
+                    <button type="submit" id="submit">Submit</button>
                 </div>
-                <div class="checkbox">
-                    <input type="checkbox" name="scales" value="2">
-                    <label class="checkbox-label">learn a new language</label>
-                </div>
-                <div class="checkbox">
-                    <input type="checkbox" name="scales" value="2">
-                    <label class="checkbox-label">visit new places</label>
-                </div>
-                <div class="checkbox">
-                    <input type="checkbox" name="scales" value="2">
-                    <label class="checkbox-label">expand your knowledge</label>
-                </div>
-
-                <textarea name="comment" maxlength="250">Some funny experiences?</textarea>
-                <button type="submit" id="submit">
             </form>
         </div>
     </body>

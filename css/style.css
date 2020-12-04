@@ -5,10 +5,12 @@ body {
     display: grid;
     align-items: center;
     justify-items: center;
+    font-family: 'Open Sans', sans-serif;
 }
 .form-wrap{
-width: 320px; 
-background: #3e3d3d; 
+width: 1000px; 
+background: #ffffff;
+border-radius: 10px;
 padding: 100px 10px; 
 box-sizing: border-box; 
 position: fixed; 
@@ -24,24 +26,140 @@ h1, p{
 }
 form {
     display: block;
-    background: rgb(242, 212, 243);
-    width: 100%;
+    background: rgb(201, 227, 252);
+    border-radius: 10px;
+    width: 700px;
+    Padding:20px;
+    Margin: auto;
+}
+.personal-info{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: auto;
+    padding: 10px;
+}
+.personal-fields {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+#name-label, #email-label, #number-label {
+    /*margin-right: 15px;*/
+}
+#name, #email, #number {
+    width: 50%;
+    border-radius: 8px;
+    border: 0px solid;
+    padding: 10px;
+}
+.city-fields{
+    justify-content: space-between;
+    display: flex;
+    width: 60%;
+    margin: auto;
+    padding: 10px;
+}
+#dropdown{
+    font-size: 13px;
+    padding: 10px 8px 10px 14px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    position: relative;
+    width: 50%;
+    cursor: pointer;
 }
 .nationality{
-    padding: 6px 15px;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: auto;
+    padding: 10px;
 }
-.checkbox {
-    padding: 6px 15px;
+.nationality-options{
+    display: table-row;
+    margin-inline-start: 50%;
 }
-.textarea{
-    padding: 6px 15px;
+.nationality-fields{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    padding: 4px;
 }
-input {
-    width: 50%;
-    border-radius: 20px;
-    outline: none
-  }
-  input:focus {
+.travelling{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 60%;
+    margin: auto;
+    padding: 10px; 
+}
+.travelling-checkbox{
+    display: flex;
+    margin-inline-start: 50%;
+    padding: 4px;
+}
+.travelling-tittle{
+    padding: 10px 0px;
+}
+.checkbox{
+    /*padding: 6px 15px;*/
+}
+section{
+    justify-content: space-between;
+    display: flex;
+    width: 60%;
+    margin: auto;
+    padding: 30px 10px 10px;
+}
+input:focus {
     background-color: rgb(242, 212, 243);
-    border: 3px solid rgb(234, 152, 236);
-  }
+    outline: none;
+}
+input[type="radio" i]{
+    width: 20px;
+    cursor: pointer;
+}
+input[type="checkbox" i] {
+    cursor: pointer;
+}
+.fields{
+    margin: 0px;
+    height: auto;
+    width: 50%;
+}
+textarea{
+    font-family: 'Open Sans';
+    border-radius: 8px;
+    border: 0px solid;
+    padding: 6px 15px;
+    width: 100%;
+    height: 100px;
+}
+textarea:focus {
+    outline: none;
+}
+.button{
+    width: 60%;
+    margin: auto;
+    padding: 40px 10px 30px;
+    display: flex;
+    flex-direction: column;
+}
+#submit{
+    box-shadow: 0px 10px 14px -7px #276873;
+    background: linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+    background-color: #599bb3;
+    border-radius: 8px;
+    border-width: inherit;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 13px 32px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #3d768a;
+}
